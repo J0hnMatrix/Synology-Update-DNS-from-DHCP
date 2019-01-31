@@ -1,0 +1,12 @@
+/var/services/homes/admin/scripts/synology_dhcp_dns_autoupdate/logs/*.log
+{
+    rotate 4
+    weekly
+    missingok
+    notifempty
+    compress
+    delaycompress
+    postrotate
+        /usr/local/etc/rc.d/S99pollDHCP.sh restart > /dev/null 2>/dev/null || true
+    endscript
+}
