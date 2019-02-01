@@ -1,31 +1,23 @@
-Update DNS Server entries from DHCP leases
+# Update DNS Server entries from DHCP leases
 This repo contains scripts for Synology routers that automatically update DNS Server package from DHCP leases
 
-Connect to your router WebUI.
+- Connect to your router WebUI.
+- Install DNS Server package.
+- Configure Forward/Reverse Zones accordingly to your infrastructure.
+- Activate the users home folders feature.
+- Install Easy Bootstrap Installer package from here:
+https://www.cphub.net/?p=ebi
 
-Install DNS Server package.
+- SSH to the router and type "opkg install bash"
+- Copy the files in a folder named "dhcp_dns_changes" in the home folder of the admin account:
+/volumeUSB1/usbshare1-1/@sharebin/homes/admin/dhcp_dns_changes/
 
-Configure Forward/Reverse Zones accordingly to your infrastructure.
-
-Activate the users home folders feature.
-
-Install Easy Bootstrap Installer package from here: https://www.cphub.net/?p=ebi
-
-SSH to the router and type "opkg install bash"
-
-Copy the files in a folder named "dhcp_dns_changes" in the home folder of the admin account: /volumeUSB1/usbshare1-1/@sharebin/homes/admin/dhcp_dns_changes/
-
-Change the value of the "settings" file if required.
-
-Give execution permission for the file "install.sh"
-
-Install the script by launching "./install.sh"
-
-Check the "log" folder in "dhcp_dns_changes" folder to see if a logfile has been created.
-
-Check the "dns_backups" folderif a backup has been done.
-
-Check your the Forward/Reverse Zones in your DNS Server if they have been successfully updated.
+- Change the value of the "settings" file if required.
+- Give execution permission for the file "install.sh"
+- Install the script by launching "./install.sh"
+- Check the "log" folder in "dhcp_dns_changes" folder to see if a logfile has been created.
+- Check the "dns_backups" folderif a backup has been done.
+- Check your the Forward/Reverse Zones in your DNS Server if they have been successfully updated.
 
 Source: https://blogging.dragon.org.uk/dns-and-dhcp-on-synology-nas/
 
