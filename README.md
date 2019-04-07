@@ -13,6 +13,7 @@ https://www.cphub.net/?p=ebi
    - scripts
      - synology_dhcp_dns_autoupdate
 
+- Copy all the files inside this folder
 - Change the value of the "settings" file if required.
 - Give execution permission for the file "install.sh"
 - Install the script by launching "./install.sh"
