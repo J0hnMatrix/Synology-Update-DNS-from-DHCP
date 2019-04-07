@@ -9,9 +9,10 @@ This repo contains scripts for Synology routers that automatically update DNS Se
 https://www.cphub.net/?p=ebi
 
 - SSH to the router and type "opkg install bash"
-- Go to /var/services/homes/admin/dhcp_dns_changes/ and create the following folders:
-   - scripts
-     - synology_dhcp_dns_autoupdate
+- Go to /var/services/homes/admin/ and create the following folders:
+   - dhcp_dns_changes
+      - scripts
+         - synology_dhcp_dns_autoupdate
 
 - Copy all the files in this folder
 - Change the value of the "settings" file if required.
