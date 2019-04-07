@@ -10,7 +10,7 @@ https://www.cphub.net/?p=ebi
 
 - SSH to the router and type "opkg install bash"
 - Copy the files in a folder named "dhcp_dns_changes" in the home folder of the admin account:
-/volumeUSB1/usbshare1-1/@sharebin/homes/admin/dhcp_dns_changes/
+/var/services/homes/admin/dhcp_dns_changes/
 
 - Change the value of the "settings" file if required.
 - Give execution permission for the file "install.sh"
