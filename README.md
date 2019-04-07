@@ -23,6 +23,10 @@ https://www.cphub.net/?p=ebi
 - Check your the Forward/Reverse Zones in your DNS Server if they have been successfully updated.
 - Reboot the router and check again if all is updating correctly
 
+
+
+
+
 Source: https://blogging.dragon.org.uk/dns-and-dhcp-on-synology-nas/
 
 
