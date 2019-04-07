@@ -17,9 +17,11 @@ https://www.cphub.net/?p=ebi
 - Change the value of the "settings" file if required.
 - Give execution permission for the file "install.sh"
 - Install the script by launching "./install.sh"
+- Manually launch the script S99pollDHCP.sh located in /usr/local/etc/rc.d
 - Check the "log" folder in "dhcp_dns_changes" folder to see if a logfile has been created.
 - Check the "dns_backups" folderif a backup has been done.
 - Check your the Forward/Reverse Zones in your DNS Server if they have been successfully updated.
+- Reboot the router and check again if all is updating correctly
 
 Source: https://blogging.dragon.org.uk/dns-and-dhcp-on-synology-nas/
 
