@@ -17,6 +17,7 @@ https://www.cphub.net/?p=ebi
 - Change the value of the "settings" file if required.
 - Give execution permission for the file "install.sh"
 - Install the script by launching "./install.sh"
+- Change permissions to 775 for all files in the folder /var/services/homes/admin/scripts/synology_dhcp_dns_autoupdate/bin/
 - Manually launch the script S99pollDHCP.sh located in /usr/local/etc/rc.d
 - Check the "log" folder in "dhcp_dns_changes" folder to see if a logfile has been created.
 - Check the "dns_backups" folderif a backup has been done.
@@ -24,7 +25,8 @@ https://www.cphub.net/?p=ebi
 tail -f /var/services/homes/admin/scripts/synology_dhcp_dns_autoupdate/logs/dhcp-dns.log
 
 - Check your the Forward/Reverse Zones in your DNS Server if they have been successfully updated.
-- Reboot the router and check again if all is updating correctly
+- Reboot the router for running the script in the background and check again if all is updating correctly.
+- Take a beer! =)
 
 
 
