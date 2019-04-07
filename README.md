@@ -20,6 +20,9 @@ https://www.cphub.net/?p=ebi
 - Manually launch the script S99pollDHCP.sh located in /usr/local/etc/rc.d
 - Check the "log" folder in "dhcp_dns_changes" folder to see if a logfile has been created.
 - Check the "dns_backups" folderif a backup has been done.
+- Check the content of the logfile with the command
+tail -f /var/services/homes/admin/scripts/synology_dhcp_dns_autoupdate/logs/dhcp-dns.log
+
 - Check your the Forward/Reverse Zones in your DNS Server if they have been successfully updated.
 - Reboot the router and check again if all is updating correctly
 
