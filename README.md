@@ -1,10 +1,10 @@
 # Update DNS Server entries from DHCP leases
 This repo contains scripts for Synology routers that automatically update DNS Server package from DHCP leases
 
-- Connect to your router WebUI.
-- Install DNS Server package.
-- Configure Forward/Reverse Zones accordingly to your infrastructure.
-- Activate the users home folders feature.
+- Connect to your router WebUI
+- Install DNS Server package
+- Configure Forward/Reverse Zones accordingly to your infrastructure
+- Activate the users home folders feature
 - Install Easy Bootstrap Installer package from here:
 https://www.cphub.net/?p=ebi
 
@@ -15,18 +15,17 @@ https://www.cphub.net/?p=ebi
          - synology_dhcp_dns_autoupdate
 
 - Copy all the files in this folder
-- Change the value of the "settings" file if required.
+- Change the content of the "settings" file if required
 - Give execution permission for the file "install.sh"
 - Install the script by launching "./install.sh"
 - Change permissions to 775 for all files in the folder /var/services/homes/admin/scripts/synology_dhcp_dns_autoupdate/bin/
 - Manually launch the script S99pollDHCP.sh located in /usr/local/etc/rc.d
-- Check the "log" folder in "dhcp_dns_changes" folder to see if a logfile has been created.
-- Check the "dns_backups" folderif a backup has been done.
-- Check the content of the logfile with the command
+- Check the "log" folder in "dhcp_dns_changes" folder to see if a logfile has been created and check its content with:
 tail -f /var/services/homes/admin/scripts/synology_dhcp_dns_autoupdate/logs/dhcp-dns.log
 
-- Check your the Forward/Reverse Zones in your DNS Server if they have been successfully updated.
-- Reboot the router for running the script in the background and check again if all is updating correctly.
+- Check the "dns_backups" folder if a backup has been done
+- Check your the Forward/Reverse Zones in your DNS Server if they have been successfully updated
+- Reboot the router for running the script in the background and check again if all is updating correctly
 - Take a beer! =)
 
 
